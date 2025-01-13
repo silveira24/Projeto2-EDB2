@@ -65,17 +65,16 @@ A função principal organiza o fluxo de execução do programa e apresenta as i
 
 1. Certifique-se de ter o compilador **GCC** instalado.
 2. Navegue até o diretório do projeto.
-3. Compile o programa utilizando o `Makefile`:
-   make
+3. Compile o programa utilizando o `Makefile`: make
 Isso irá gerar o executável programa.
 
-Execute o programa:
+4. Execute o programa:
 ./programa
 
 
-Estrutura dos Arquivos
-palavras.txt
-Este arquivo contém as palavras que podem ser validadas no jogo. Exemplo de conteúdo:
+## Estrutura dos Arquivos
+### palavras.txt
+#### Este arquivo contém as palavras que podem ser validadas no jogo. Exemplo de conteúdo:
 
 ganimedes
 calisto
@@ -84,8 +83,8 @@ metis
 adrasteia
 
 
-tabuleiro.txt
-Este arquivo representa o tabuleiro do jogo em formato de matriz. Exemplo de conteúdo:
+### tabuleiro.txt
+#### Este arquivo representa o tabuleiro do jogo em formato de matriz. Exemplo de conteúdo:
 
 10 10
 O V W Q O L L A D G
@@ -100,9 +99,9 @@ D S F L K X E K T A
 Y C A G A P E H E T
 
 
-Exemplo de Execução
-Entrada:
-Arquivo palavras.txt com as seguintes palavras:
+### Exemplo de Execução
+#### Entrada:
+##### Arquivo palavras.txt com as seguintes palavras:
 
 ganimedes
 calisto
@@ -115,7 +114,7 @@ sinope
 leda
 agape
 
-Arquivo tabuleiro.txt com o tabuleiro:
+#### Arquivo tabuleiro.txt com o tabuleiro:
 
 10 10
 O V W Q O L L A D G
@@ -130,8 +129,8 @@ D S F L K X E K T A
 Y C A G A P E H E T
 
 
-Saída:
-O programa encontrará automaticamente as palavras no tabuleiro e as exibirá no terminal:
+#### Saída:
+##### O programa encontrará automaticamente as palavras no tabuleiro e as exibirá no terminal:
 
 Palavras encontradas:
 1. ganimedes
@@ -146,14 +145,14 @@ Palavras encontradas:
 10. agape
 
 
-Dependências
+### Dependências
 Compilador C (GCC).
 Makefile para automatizar a compilação.
 Arquivos de texto palavras.txt e tabuleiro.txt.
 
 
-Créditos
-Projeto desenvolvido por:
+### Créditos
+#### Projeto desenvolvido por:
 
 Gabriel Santos da Silveira
 Tobias dos Santos Neto
