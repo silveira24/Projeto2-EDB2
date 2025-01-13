@@ -8,7 +8,28 @@ Este projeto implementa um jogo de caça-palavras em **C**, utilizando uma estru
 
 O projeto está organizado da seguinte forma:
 
-caca-palavras/ ├── avl.c # Implementação da Árvore AVL ├── avl.h # Cabeçalho da Árvore AVL ├── tabuleiro # estrutura do tabuleiro ├── coordenadas.h # estrutura das coordenadas das palavras ├── trie.c # Implementação da Árvore Digital (Trie) ├── trie.h # Cabeçalho da Árvore Digital (Trie) ├── jogo.c # Lógica principal do jogo ├── main.c # Função principal ├── palavras.txt # Lista de palavras válidas para o jogo ├── tabuleiro.txt # Tabuleiro do jogo ├── Makefile # Automação do processo de compilação └── README.md # Descrição do projeto
+Projeto2/
+├── include/              # Diretório para arquivos de cabeçalho
+│   ├── avl.h             # Cabeçalho da AVL
+│   ├── coordenadas.h     # Estruturas das coordenadas das palavras
+│   ├── jogo.h            # Cabeçalho da lógica do jogo
+│   ├── tabuleiro.h       # Cabeçalho para manipulação do tabuleiro
+│   └── trie.h            # Cabeçalho da Árvore Trie
+│
+├── src/                  # Diretório para arquivos-fonte
+│   ├── avl.c             # Implementação da Árvore AVL
+│   ├── jogo.c            # Lógica principal do jogo
+│   ├── main.c            # Função principal
+│   ├── tabuleiro.c       # Manipulação do tabuleiro
+│   ├── trie.c            # Implementação da Árvore Trie
+│
+├── data/                 # Diretório para arquivos de entrada/saída de dados
+│   ├── palavras.txt      # Lista de palavras válidas para o jogo
+│   ├── tabuleiro.txt     # Arquivo com o tabuleiro do jogo
+│
+├── .gitignore            # Arquivos e pastas ignorados pelo Git
+├── Makefile              # Automação do processo de compilação
+├── README.md             # Documentação do projeto
 
 ## Funcionalidades
 
@@ -65,11 +86,12 @@ A função principal organiza o fluxo de execução do programa e apresenta as i
 
 1. Certifique-se de ter o compilador **GCC** instalado.
 2. Navegue até o diretório do projeto.
-3. Compile o programa utilizando o `Makefile`: make
+3. Compile o programa utilizando o `Makefile`: 
+    make  
 Isso irá gerar o executável programa.
 
-4. Execute o programa:
-./programa
+4. Execute o programa:  
+    ./programa
 
 
 ## Estrutura dos Arquivos
@@ -86,22 +108,22 @@ adrasteia
 ### tabuleiro.txt
 #### Este arquivo representa o tabuleiro do jogo em formato de matriz. Exemplo de conteúdo:
 
-10 10
-O V W Q O L L A D G
-H A E O J K O N A Q
-I P P I T J E N U B
-M O O P A S I F A E
-A R N J V M I P D S
-L U I E E X L L I B
-I E S D P E Z E A Y
-A T E E L A R A D C
-D S F L K X E K T A
-Y C A G A P E H E T
+10 10  
+O V W Q O L L A D G  
+H A E O J K O N A Q  
+I P P I T J E N U B  
+M O O P A S I F A E  
+A R N J V M I P D S  
+L U I E E X L L I B  
+I E S D P E Z E A Y  
+A T E E L A R A D C  
+D S F L K X E K T A  
+Y C A G A P E H E T  
 
 
-### Exemplo de Execução
-#### Entrada:
-##### Arquivo palavras.txt com as seguintes palavras:
+## Exemplo de Execução
+### Entrada:
+#### Arquivo palavras.txt com as seguintes palavras:
 
 ganimedes
 calisto
@@ -116,21 +138,21 @@ agape
 
 #### Arquivo tabuleiro.txt com o tabuleiro:
 
-10 10
-O V W Q O L L A D G
-H A E O J K O N A Q
-I P P I T J E N U B
-M O O P A S I F A E
-A R N J V M I P D S
-L U I E E X L L I B
-I E S D P E Z E A Y
-A T E E L A R A D C
-D S F L K X E K T A
-Y C A G A P E H E T
+10 10  
+O V W Q O L L A D G  
+H A E O J K O N A Q  
+I P P I T J E N U B  
+M O O P A S I F A E  
+A R N J V M I P D S  
+L U I E E X L L I B  
+I E S D P E Z E A Y  
+A T E E L A R A D C  
+D S F L K X E K T A  
+Y C A G A P E H E T  
 
 
-#### Saída:
-##### O programa encontrará automaticamente as palavras no tabuleiro e as exibirá no terminal:
+### Saída:
+#### O programa encontrará automaticamente as palavras no tabuleiro e as exibirá no terminal:
 
 Palavras encontradas:
 1. ganimedes
@@ -145,14 +167,14 @@ Palavras encontradas:
 10. agape
 
 
-### Dependências
-Compilador C (GCC).
-Makefile para automatizar a compilação.
-Arquivos de texto palavras.txt e tabuleiro.txt.
+## Dependências
+Compilador C (GCC).  
+Makefile para automatizar a compilação.  
+Arquivos de texto palavras.txt e tabuleiro.txt.  
 
 
-### Créditos
-#### Projeto desenvolvido por:
+## Créditos
+### Projeto desenvolvido por:
 
-Gabriel Santos da Silveira
+Gabriel Santos da Silveira  
 Tobias dos Santos Neto
