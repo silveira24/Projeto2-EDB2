@@ -8,28 +8,27 @@ Este projeto implementa um jogo de caça-palavras em **C**, utilizando uma estru
 
 O projeto está organizado da seguinte forma:
 
-Projeto2/
-├── include/              # Diretório para arquivos de cabeçalho
-│   ├── avl.h             # Cabeçalho da AVL
-│   ├── coordenadas.h     # Estruturas das coordenadas das palavras
-│   ├── jogo.h            # Cabeçalho da lógica do jogo
-│   ├── tabuleiro.h       # Cabeçalho para manipulação do tabuleiro
-│   └── trie.h            # Cabeçalho da Árvore Trie
-│
-├── src/                  # Diretório para arquivos-fonte
-│   ├── avl.c             # Implementação da Árvore AVL
-│   ├── jogo.c            # Lógica principal do jogo
-│   ├── main.c            # Função principal
-│   ├── tabuleiro.c       # Manipulação do tabuleiro
-│   ├── trie.c            # Implementação da Árvore Trie
-│
-├── data/                 # Diretório para arquivos de entrada/saída de dados
-│   ├── palavras.txt      # Lista de palavras válidas para o jogo
-│   ├── tabuleiro.txt     # Arquivo com o tabuleiro do jogo
-│
-├── .gitignore            # Arquivos e pastas ignorados pelo Git
-├── Makefile              # Automação do processo de compilação
-├── README.md             # Documentação do projeto
+Projeto2/  
+├── include/              # Diretório para arquivos de cabeçalho  
+│   ├── avl.h             # Cabeçalho da AVL  
+│   ├── coordenadas.h     # Estruturas das coordenadas das palavras  
+│   ├── jogo.h            # Cabeçalho da lógica do jogo  
+│   ├── tabuleiro.h       # Cabeçalho para manipulação do tabuleiro  
+│   └── trie.h            # Cabeçalho da Árvore Trie  
+│  
+├── src/                  # Diretório para arquivos-fonte  
+│   ├── avl.c             # Implementação da Árvore AVL  
+│   ├── jogo.c            # Lógica principal do jogo  
+│   ├── main.c            # Função principal  
+│   ├── tabuleiro.c       # Manipulação do tabuleiro  
+│   ├── trie.c            # Implementação da Árvore Trie  
+│   
+├── palavras.txt          # Lista de palavras válidas para o jogo  
+├── tabuleiro.txt         # Arquivo com o tabuleiro do jogo  
+│  
+├── .gitignore            # Arquivos e pastas ignorados pelo Git  
+├── Makefile              # Automação do processo de compilação  
+├── README.md             # Documentação do projeto  
 
 ## Funcionalidades
 
@@ -71,13 +70,12 @@ Este módulo contém a lógica principal do jogo.
 
 ### Função Principal (`main.c`)
 
-A função principal organiza o fluxo de execução do programa e apresenta as informações para o usuário.
+A função principal organiza o fluxo de execução do programa e apresenta um menu interativo para o usuário.
 
 - **Funcionalidades do menu**:
   - Inicializar o jogo.
   - Exibir o tabuleiro.
   - Listar as palavras encontradas.
-  - Limpar a memória alocada para o jogo 
   - Sair do programa.
 
 ---
